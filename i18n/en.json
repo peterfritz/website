@@ -1,0 +1,49 @@
+{
+  "spotlight": {
+    "search": "Search...",
+    "nothingFound": {
+      "title": "Nothing found...",
+      "message": "Try searching for {ffo} or {lo}",
+      "dontPress": "But please don't press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd>"
+    },
+    "actions": {
+      "groups": {
+        "navigation": "navigation",
+        "social": "social",
+        "contact": "contact",
+        "settings": "settings",
+        "secret": "secret"
+      },
+      "titles": {
+        "contact": "Contact",
+        "colorScheme": "Change theme to {theme}"
+      },
+      "soon": "Sorry, this feature is not yet available.",
+      "dark": "dark",
+      "light": "light"
+    }
+  },
+  "link": {
+    "title": "Open external link",
+    "newTab": {
+      "text": "New tab",
+      "tooltip": "Open link in a new tab"
+    },
+    "currTab": {
+      "tooltip": "Open link in current tab"
+    },
+    "copy": {
+      "tooltip": "Copy link",
+      "copied": "Link copied successfully"
+    }
+  },
+  "footer": {
+    "chooseLanguage": "Choose your language",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "index": {
+    "description": "Full stack based in São Paulo, Brazil focused in cybersecurity.",
+    "motto": "Secure and accessible websites in the blink of an eye."
+  }
+}
