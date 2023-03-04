@@ -1,5 +1,10 @@
+import NowPlaying from '@/components/NowPlaying';
+
 const About = () => (
-  <p>About</p>
+  <div>
+    About
+    <NowPlaying />
+  </div>
 );
 
 export default About;

@@ -1,18 +1,20 @@
 import type { GetServerSidePropsContext } from 'next';
 import type { AppProps } from 'next/app';
 
+import Layout from '@/components/TestLayout';
 import { ColorSchemeProvider, MantineProvider, type ColorScheme } from '@mantine/core';
 import { useColorScheme } from '@mantine/hooks';
 import { JetBrains_Mono as JetBrainsMono } from '@next/font/google';
-// import { JetBrains_Mono as JetBrainsMono, Roboto } from '@next/font/google';
 import { printCredits, theme as brandTheme } from '@peterfritz/brand';
 import { Analytics } from '@vercel/analytics/react';
 import { getCookie, setCookie } from 'cookies-next';
+import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 
-import Layout from '@/components/Layout';
-import Spotlight from '@/components/Spotlight';
 import '@/styles/globals.css';
+
+const Player = dynamic(() => (import('@/components/Player')));
+const Spotlight = dynamic(() => (import('@/components/Spotlight')));
 
 const jetBrainsMono = JetBrainsMono({
   subsets: ['latin'],
@@ -73,6 +75,7 @@ const App = ({ Component, pageProps, theme }: AppProps & { theme: ColorScheme | 
           <Component {...pageProps} />
         </Layout>
         <Spotlight />
+        <Player />
       </MantineProvider>
       <Analytics />
     </ColorSchemeProvider>

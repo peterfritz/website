@@ -21,20 +21,19 @@ const SearchBar = () => {
       onClick={() => openSpotlight()}
     >
       <TextInput
-        placeholder="Pesquise"
+        placeholder="Pesquisar"
         icon={(
           <FaSearch />
         )}
         rightSection={(
           <Group
             spacing="xs"
-            position="right"
-            mr={5}
             px={5}
-            bg="dark"
             sx={(theme) => ({
               borderRadius: theme.radius.sm,
+              backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[1],
             })}
+            className="absolute right-[5px]"
           >
             <Text size="xs">
               {os === 'undetermined' || !(os === 'macos') ? 'Ctrl' : '⌘'}
@@ -54,6 +53,7 @@ const SearchBar = () => {
         aria-hidden
         tabIndex={-1}
         readOnly
+        className="relative"
       />
     </UnstyledButton>
   );

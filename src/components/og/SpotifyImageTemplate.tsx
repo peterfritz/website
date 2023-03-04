@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
-import type { NowPlaying } from '@/service/spotify';
+import type { INowPlaying } from '@/service/spotify';
 
-const SpotifyImageTemplate = ({ nowPlaying }: { nowPlaying: NowPlaying }) => (
+const SpotifyImageTemplate = ({ nowPlaying }: { nowPlaying: INowPlaying }) => (
   <div
     style={{
       height: '100%',

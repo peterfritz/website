@@ -4,6 +4,7 @@ import {
   Grid,
 } from '@mantine/core';
 import Aside from './Aside';
+import Header from './Header';
 
 const Layout = ({ children }: PropsWithChildren) => (
   <Grid
@@ -13,7 +14,8 @@ const Layout = ({ children }: PropsWithChildren) => (
     className="h-full overflow-auto"
   >
     <Grid.Col span={12} sm={4} md={3}>
-      <Aside className="hidden sm:block" />
+      <Header />
+      <Aside />
     </Grid.Col>
     <Grid.Col span={12} sm={8} md={7} p={10}>
       <main className="h-full">

@@ -28,7 +28,7 @@ const getAccessToken = async () => {
   return data.access_token;
 };
 
-export interface NowPlaying {
+export interface INowPlaying {
   id: string,
   name: string,
   image: string,
@@ -40,7 +40,7 @@ export interface NowPlaying {
   }[]
 }
 
-export const getNowPlaying = async (): Promise<NowPlaying | null> => {
+export const getNowPlaying = async (): Promise<INowPlaying | null> => {
   try {
     const accessToken = await getAccessToken();
 
@@ -94,7 +94,7 @@ export const getNowPlaying = async (): Promise<NowPlaying | null> => {
         url: artist.external_urls.spotify,
         name: artist.name,
       })),
-    } as NowPlaying;
+    } as INowPlaying;
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(err);
