@@ -14,7 +14,6 @@ specifiers:
   '@mantine/nprogress': ^6.0.0
   '@mantine/prism': ^6.0.0
   '@mantine/spotlight': ^6.0.0
-  '@next/font': 13.1.6
   '@peterfritz/brand': ^1.0.2
   '@types/node': 18.13.0
   '@types/react': 18.0.27
@@ -57,7 +56,6 @@ dependencies:
   '@mantine/nprogress': 6.0.0_uziugpv5zwkk3pqsn64qbjkxrm
   '@mantine/prism': 6.0.0_uziugpv5zwkk3pqsn64qbjkxrm
   '@mantine/spotlight': 6.0.0_uziugpv5zwkk3pqsn64qbjkxrm
-  '@next/font': 13.1.6
   '@peterfritz/brand': 1.0.2
   '@types/node': 18.13.0
   '@types/react': 18.0.27
@@ -714,10 +712,6 @@ packages:
     resolution: {integrity: sha512-QmMPItnU7VeojI1KnuwL9SLFWEwmaNHNlnOGpoTwdLoSiP9sc8KYiAHWEc4/44L+cAdCxcZYvn7frcRNP5l84Q==}
     dependencies:
       glob: 7.1.7
-    dev: false
-
-  /@next/font/13.1.6:
-    resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.2.3:

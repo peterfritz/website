@@ -4,11 +4,11 @@ import type { AppProps } from 'next/app';
 import Layout from '@/components/TestLayout';
 import { ColorSchemeProvider, MantineProvider, type ColorScheme } from '@mantine/core';
 import { useColorScheme } from '@mantine/hooks';
-import { JetBrains_Mono as JetBrainsMono } from '@next/font/google';
 import { printCredits, theme as brandTheme } from '@peterfritz/brand';
 import { Analytics } from '@vercel/analytics/react';
 import { getCookie, setCookie } from 'cookies-next';
 import dynamic from 'next/dynamic';
+import { JetBrains_Mono as JetBrainsMono } from 'next/font/google';
 import { useEffect, useState } from 'react';
 
 import '@/styles/globals.css';

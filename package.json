@@ -23,7 +23,6 @@
     "@mantine/nprogress": "^6.0.0",
     "@mantine/prism": "^6.0.0",
     "@mantine/spotlight": "^6.0.0",
-    "@next/font": "13.1.6",
     "@peterfritz/brand": "^1.0.2",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
