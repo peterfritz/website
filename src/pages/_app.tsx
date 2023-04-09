@@ -1,7 +1,8 @@
 import type { GetServerSidePropsContext } from 'next';
 import type { AppProps } from 'next/app';
 
-import Layout from '@/components/TestLayout';
+import Layout from '@/components/Layout';
+import SkipButton from '@/components/SkipButton';
 import { ColorSchemeProvider, MantineProvider, type ColorScheme } from '@mantine/core';
 import { useColorScheme } from '@mantine/hooks';
 import { printCredits, theme as brandTheme } from '@peterfritz/brand';
@@ -20,6 +21,7 @@ const jetBrainsMono = JetBrainsMono({
   subsets: ['latin'],
   display: 'swap',
 });
+
 // const roboto = Roboto({
 //   subsets: ['latin'],
 //   weight: ['400', '700'],
@@ -71,6 +73,7 @@ const App = ({ Component, pageProps, theme }: AppProps & { theme: ColorScheme | 
           },
         }}
       >
+        <SkipButton />
         <Layout>
           <Component {...pageProps} />
         </Layout>
@@ -82,7 +85,7 @@ const App = ({ Component, pageProps, theme }: AppProps & { theme: ColorScheme | 
   );
 };
 
-App.getInitialProps = ({ ctx }: {ctx: GetServerSidePropsContext}) => ({
+App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
   theme: getCookie('theme', ctx) || 'system',
 });
 

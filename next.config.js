@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    formats: ['image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,8 +14,8 @@ const nextConfig = {
   },
   rewrites: async () => ([
     {
-      source: '/api/spotify/now-playing.png',
-      destination: '/api/spotify/now-playing/image',
+      source: '/api/spotify/now-playing.:filetype(svg|png)',
+      destination: '/api/spotify/now-playing/image.:filetype',
     },
   ]),
 };

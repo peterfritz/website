@@ -1,6 +1,5 @@
 import Hero from '@/components/Hero';
-import { Box } from '@mantine/core';
-import { motion } from 'framer-motion';
+import { Box, Title } from '@mantine/core';
 
 const Home = () => (
   <>
@@ -11,13 +10,9 @@ const Home = () => (
         maxWidth: theme.breakpoints.sm,
       })}
     >
-      <motion.section
-        initial={{ scale: 0.8 }}
-        whileInView={{ scale: 1 }}
-        viewport={{ once: true }}
-      >
-        <p>Home</p>
-      </motion.section>
+      <main id="main">
+        <Title>Home</Title>
+      </main>
     </Box>
   </>
 );

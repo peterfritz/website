@@ -1,4 +1,4 @@
-import type { INowPlaying } from '@/service/spotify';
+import type { Track } from '@/service/spotify';
 
 import { create } from 'zustand';
 
@@ -6,7 +6,7 @@ interface PlayerState {
   isOpen: boolean;
   id: string;
   name: string;
-  setPlayer: (_song: Pick<INowPlaying, 'id' | 'name'>) => void;
+  setPlayer: (_song: Pick<Track, 'id' | 'name'>) => void;
   closePlayer: () => void;
 }
 

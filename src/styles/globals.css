@@ -21,6 +21,7 @@ body,
 #root,
 #__next {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -86,9 +87,9 @@ a {
   height: 100vh;
 }
 
-@supports (height: 100lvh) {
+@supports (height: 100dvh) {
   .full-height {
-    height: 100lvh;
+    height: 100dvh;
   }
 }
 
@@ -96,4 +97,8 @@ a {
   color: white;
   /* background-color: #ff033e; */
   background-color: #0347ff;
+}
+
+#main, [id] {
+  scroll-margin-top: 4.5rem;
 }

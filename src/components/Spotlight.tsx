@@ -23,7 +23,6 @@ const Spotlight = () => {
       searchPlaceholder="Digite algo aqui..."
       shortcut={['mod + K', 'mod + shift + K', '.']}
       nothingFoundMessage="Nada encontrado..."
-      overlayBlur={0}
       searchInputProps={{
         autoComplete: 'off',
       }}

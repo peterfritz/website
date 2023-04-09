@@ -23,6 +23,7 @@ const Player = () => {
         right: 10,
       }}
       p={10}
+      withBorder
     >
       {player.isOpen && (
         <>

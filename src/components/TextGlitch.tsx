@@ -18,9 +18,11 @@ const TextGlitch = ({ text }: Props) => {
           return character;
         }
 
+        const randomChar = charSet[Math.floor(Math.random() * charSet.length)];
+
         return character !== character.toUpperCase()
-          ? charSet[Math.floor(Math.random() * charSet.length)]
-          : charSet[Math.floor(Math.random() * charSet.length)].toUpperCase();
+          ? randomChar
+          : randomChar.toUpperCase();
       });
 
       setAnimatedText(newText.join(''));
@@ -38,14 +40,14 @@ const TextGlitch = ({ text }: Props) => {
   }, [text]);
 
   return (
-    <>
-      <span className="sr-only">
+    <p className="relative">
+      <span className="absolute inset-0 text-transparent">
         {text}
       </span>
-      <span className="contents" aria-hidden>
+      <span className="contents select-none" aria-hidden>
         {animatedText}
       </span>
-    </>
+    </p>
   );
 };
 
